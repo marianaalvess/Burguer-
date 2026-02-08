@@ -1,0 +1,614 @@
+/* Configurações Globais - SEM CANTOS ARREDONDADOS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    border-radius: 0 !important;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #fff;
+    color: #333;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Botões com Efeito 3D e Sombra Sólida */
+.btn-primary {
+    display: inline-block;
+    padding: 15px 30px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 3px solid #000;
+    cursor: pointer;
+    transition: 0.1s;
+    background: #e63946;
+    color: #fff;
+    box-shadow: 6px 6px 0px #000;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.btn-primary:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 8px 8px 0px #000;
+}
+
+.btn-primary:active {
+    transform: translate(4px, 4px);
+    box-shadow: 2px 2px 0px #000;
+}
+
+.btn-outline {
+    background: #fff;
+    color: #000;
+}
+
+.btn-add {
+    width: 100%;
+    margin-top: auto;
+}
+
+.btn-nav {
+    padding: 10px 20px;
+    font-size: 12px;
+}
+
+/* Header Actions Container */
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Language Button */
+.btn-lang {
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 8px 12px;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+}
+
+.btn-lang:hover {
+    background: #fff;
+    color: #000;
+}
+
+header.scrolled .btn-lang {
+    border-color: #fff;
+    color: #fff;
+}
+
+header.scrolled .btn-lang:hover {
+    background: #fff;
+    color: #000;
+}
+
+
+/* Header / Navbar */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 30px 0;
+    transition: 0.4s;
+}
+
+header.scrolled {
+    background: rgba(0, 0, 0, 0.95);
+    padding: 15px 0;
+    border-bottom: 2px solid #e63946;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.8rem;
+    color: #fff;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Navegação Desktop */
+.nav-links ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.mobile-only {
+    display: none;
+}
+
+/* Hambúrguer Mobile Icon */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.menu-toggle .bar {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+/* Home / Hero */
+.hero {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    background: #000;
+    overflow: hidden;
+}
+
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1586190848861-99aa4a171e90?q=80&w=1600&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.7);
+    transform: scale(1.15);
+}
+
+.hero-text {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 9rem;
+    line-height: 0.8;
+}
+
+.sabor-destaque {
+    display: block;
+    font-size: 13rem;
+    color: transparent;
+    -webkit-text-stroke: 1px #ffffff;
+    letter-spacing: 10px;
+    margin-top: 5px;
+}
+
+.est-2024 {
+    color: #f1c40f;
+    font-weight: 900;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.hero-desc {
+    max-width: 700px;
+    margin: 40px auto;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+/* Menu Section */
+.section-padding {
+    padding: 120px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.section-title h2 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 7rem;
+    margin-bottom: 10px;
+}
+
+.menu-subtitle {
+    font-size: 18px;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.text-red {
+    color: #e63946;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+}
+
+.menu-card {
+    border: 5px solid #000;
+    padding: 15px;
+    background: #fff;
+    transition: 0.3s;
+    height: 100%;
+}
+
+.card-inner {
+    border: 1px solid #ddd;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-img-container {
+    width: 100%;
+    height: 380px;
+    overflow: hidden;
+    position: relative;
+    border-bottom: 5px solid #000;
+}
+
+.card-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.6s ease;
+}
+
+.menu-card:hover img {
+    transform: scale(1.15);
+}
+
+.badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #f1c40f;
+    padding: 6px 18px;
+    font-weight: 900;
+    font-size: 13px;
+    border: 3px solid #000;
+    z-index: 5;
+}
+
+.card-info {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.card-header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.card-header-row h3 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 36px;
+    line-height: 1;
+}
+
+.price {
+    color: #e63946;
+    font-weight: 900;
+    font-size: 26px;
+    white-space: nowrap;
+}
+
+.description {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* Sobre / História */
+.history-flex {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.history-img {
+    flex: 1.5;
+    overflow: hidden;
+    border: 8px solid #000;
+    box-shadow: 15px 15px 0px #e63946;
+}
+
+.img-bw {
+    width: 100%;
+    height: 650px;
+    object-fit: cover;
+    filter: grayscale(100%);
+    transition: 0.8s ease;
+    cursor: pointer;
+}
+
+.img-bw:hover {
+    filter: grayscale(0%);
+    transform: scale(1.02);
+}
+
+.history-content {
+    flex: 1;
+}
+
+.bg-dark {
+    background: #111;
+    color: #fff;
+}
+
+.history-content h2 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 6rem;
+    margin-bottom: 30px;
+}
+
+.history-content h2 span {
+    color: #e63946;
+}
+
+.stats {
+    display: flex;
+    gap: 60px;
+    margin-top: 50px;
+    border-top: 3px solid #333;
+    padding-top: 40px;
+}
+
+.stat-item h4 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 4rem;
+    color: #f1c40f;
+    line-height: 1;
+}
+
+/* Footer */
+footer {
+    padding-top: 80px;
+    border-top: 8px solid #000;
+    background: #f9f9f9;
+    color: #333;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 50px;
+    padding-bottom: 60px;
+}
+
+.footer-col h4 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #000;
+    letter-spacing: 1px;
+}
+
+.footer-col p,
+.footer-col li a {
+    font-size: 15px;
+    color: #000;
+    line-height: 1.8;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.footer-col li a:hover {
+    color: #e63946;
+    padding-left: 5px;
+}
+
+.footer-desc {
+    font-style: italic;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #000;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: #000;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #e63946;
+    transform: translateY(-3px);
+}
+
+.copyright {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 25px;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Animações */
+.animate-up,
+.animate-left,
+.animate-right {
+    opacity: 0;
+    transition: 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.animate-up {
+    transform: translateY(60px);
+}
+
+.animate-left {
+    transform: translateX(-80px);
+}
+
+.animate-right {
+    transform: translateX(80px);
+}
+
+.appear {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+/* --- MEDIA QUERIES PARA MOBILE --- */
+
+@media (max-width: 992px) {
+
+    /* Navbar Mobile */
+    .menu-toggle {
+        display: flex;
+    }
+
+    .desktop-only {
+        display: none;
+    }
+
+    .mobile-only {
+        display: block;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .nav-links {
+        position: fixed;
+        right: -100%;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.98);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s;
+        z-index: 1000;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links ul li {
+        margin: 25px 0;
+    }
+
+    .nav-links ul li a {
+        font-size: 1.5rem;
+        margin: 0;
+    }
+
+    /* Animação X do Hambúrguer */
+    .menu-toggle.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.active .bar:nth-child(1) {
+        transform: translateY(11px) rotate(45deg);
+    }
+
+    .menu-toggle.active .bar:nth-child(3) {
+        transform: translateY(-11px) rotate(-45deg);
+    }
+
+    /* Ajustes Gerais Mobile */
+    .container {
+        padding: 0 30px;
+    }
+
+    .hero h1 {
+        font-size: 5rem;
+    }
+
+    .sabor-destaque {
+        font-size: 6rem;
+        letter-spacing: 5px;
+    }
+
+    .hero-desc {
+        font-size: 1rem;
+    }
+
+    .section-title h2 {
+        font-size: 4rem;
+    }
+
+    .history-flex {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .history-img {
+        box-shadow: 10px 10px 0px #e63946;
+    }
+
+    .img-bw {
+        height: 400px;
+    }
+
+    .history-content h2 {
+        font-size: 4rem;
+    }
+
+    .card-header-row h3 {
+        font-size: 26px;
+    }
+}
